@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+        <% if(message.length > 0){ %>
+            <div class="alert alert-danger">
+                <%= message %>
+            </div>
+        <% } %>
+<body>
+            <form action="/login">
+                <h2>Sing in</h2>
+                <input type="email" placeholder="&#128272; email" name="email">
+                <input type="password" placeholder="&#128272; contraseña" name="password">
+                <input type="submit" value="Ingresar">
+                <hr>
+                <h4 id="registrar">¿No estas registrado?</h4>
+                <!---<input type="submit" value="Vamos" id="vamos">-->
+                <a href="/registro" class="btn btn-light">
+                <span class="fa fa-user"></span> Vamos
+                </a>
+            </form>
+            
+</body>
+</html>

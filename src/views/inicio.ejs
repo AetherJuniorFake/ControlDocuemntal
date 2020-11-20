@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="estilosPrincipal.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Control Documental</title>
+</head>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    
+          var height = $(window).height();
+    
+          $('#uno').height(height);
+    });
+    
+    </script>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#">BIGSoft</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Documentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Perfil</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <div id="contenedor">
+        <div id="uno">
+            <div id="boton">
+                <button type="button" class="btn btn-success" id="buttonIzquierda">Subir</button>
+            </div>
+            <div id="listas">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Mis Documentos 
+                        <span class="badge badge-primary badge-pill">14</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Calendario
+                        <span class="badge badge-primary badge-pill">2</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Empresa
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+         
+        <div id="dos">
+            <h2 id="misDocs">Mis actividades</h2>
+            <div id="botones">
+                <button type="button" class="btn btn-light">Todos los tipos de Documentos</button>
+                <button type="button" class="btn btn-light">Word</button>
+                <button type="button" class="btn btn-light">Excel</button>
+                <button type="button" class="btn btn-light">PowerPoint</button>
+                <button type="button" class="btn btn-light">OneNote</button>
+                <button type="button" class="btn btn-light">PDF</button>
+            </div>
+
+            <div id="documentosTodos">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Area</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Persona</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><a href="">La importancia de lavarse las manos</a></td>
+                        <td>Área de administración</td>
+                        <td>.doc</td>
+                        <td>Jose Luis Arroyo Reyes</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><a href="">Casos de Covid19</a></td>
+                        <td>Área de contabilidad</td>
+                        <td>.xlsx</td>
+                        <td>Luis Eduardo Arellano</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><a href="">Ganadores de la rifa Diciembre 2020</a></td>
+                        <td>Área de ventas</td>
+                        <td>.xlsx</td>
+                        <td>Victor Alejandro Calleros Romero</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        </div>
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #6351ce;">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0"> BIGSoft Hagamos que las cosas sucedan </h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">BIGSoft</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Empresa 100% Duranguense en crecimiento
+            desde 2009 y establecida formalmente desde
+            Noviembre de 2016.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Empresa especializada en ofrecer Soluciones Tecnológicas en:</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Desarrollo y Venta de Soware</a>
+          </p>
+          <p>
+            <a href="#!">Diseño y Desarrollo de AppsMóviles (AndroidyiOS)
+            </a>
+          </p>
+          <p>
+            <a href="#!">Cloud Services</a>
+          </p>
+          <p>
+            <a href="#!">Diseño y Desarrollo de SitiosWeb</a>
+          </p>
+          <p>
+            <a href="#!">Consultoría Profesional</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Liks de utilidad</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Tu cuenta</a>
+          </p>
+          <p>
+            <a href="#!">Acerca de la empresa</a>
+          </p>
+          <p>
+            <a href="#!">Ayuda</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contactanos</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Durango, dgo., Mexico</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> cuauhtemocpacheco@bigsoft.mx</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 52 618 836 73 87</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> Calle De la Paloma no.406. 
+                Fracc. Real del Mezquital C.P. 34199
+        </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href=""> BIGSoft Soluciones Tecnologicas</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</html>

@@ -1,0 +1,53 @@
+#contenedor{
+    overflow:hidden;
+ }
+  
+ #uno{
+    float: left;
+    width: 20%;
+    border-right: solid gray;
+    
+ }
+ #boton{
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+ }
+  
+ #dos{
+    float:left;
+    width: 80%;
+ }
+
+ #buttonIzquierda{
+    margin-top: 30px;
+ }
+#listas{
+    margin: 5%;
+}
+
+#listas a{
+    border-color: white;
+    font-size: 1vw;
+}
+
+#misDocs{
+    margin: 2%;
+}
+
+#botones{
+    margin-left: 3%;
+}
+
+#botones button{
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+#filtrar{
+    margin: 2%;
+}
+
+#documentosTodos{
+    margin-top: 4%;
+}
